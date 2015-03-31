@@ -1,0 +1,23 @@
+{
+  "name": "thing-orm",
+  "version": "1.0.0",
+  "description": "object-relational mapping with a bit of sanity",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkcmr/thing-orm"
+  },
+  "keywords": [
+    "orm",
+    "database"
+  ],
+  "author": "Nick Comer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkcmr/thing-orm/issues"
+  },
+  "homepage": "https://github.com/nkcmr/thing-orm"
+}
