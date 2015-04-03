@@ -1,1 +1,1 @@
-exports.thing = require('./lib/base')
+module.exports = require('./lib/base')
