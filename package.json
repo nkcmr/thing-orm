@@ -1,6 +1,6 @@
 {
   "name": "thing-orm",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "object-relational mapping with a bit of sanity",
   "main": "index.js",
   "scripts": {
