@@ -83,7 +83,7 @@ thing.make('User', function () {
 })
 ```
 
-_see?!_ much better.
+_see?!_ much better. i realize that object literals are still capable of being flexible, but the style doesn't lend itself to that. basically, if some newbie were to look at one versus the other, the latter is the more expressive and readable.
 
 #### todo
 - write base `Thing` api docs
