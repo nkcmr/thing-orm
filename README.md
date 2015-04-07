@@ -66,7 +66,7 @@ myModel('User', {
 this is a very limiting way to define things that need to be versatile and configurable. so a primary goal of this package is to leverage a functional style to maintain flexible objects
 
 ```javascript
-myModel('User', function () {
+thing.make('User', function () {
   this.method('beFreeMyObjects', function () {
     // conjure an image of white doves taking flight...
   })
