@@ -9,7 +9,7 @@ var thing = require('thing-orm')({
 var User = thing.make('User', function (knex) {
   this.table = 'users'
   
-  this.static('authenticate', function auth_user(username, password) {
+  this.static('authenticate', function auth_user (username, password) {
     return this.find({ username: username })
       .then(function (user) {
         return user.checkPassword(password)
@@ -19,7 +19,7 @@ var User = thing.make('User', function (knex) {
   this.method('checkPassword', function check_password (passAttempt) {
     return new Promise((resolve, reject) => {
       if (somePasswordChecker(this.password, passAttempt)) {
-        resolve()
+        resolve(this)
       } else {
         reject()
       }
@@ -27,8 +27,11 @@ var User = thing.make('User', function (knex) {
   })
 })
 
-User.find({ id: userId })
+User.authenticate('nkcmr', 'wrong-password')
   .then(function (user) {
-    send(user)
+    openSesame(user)
+  })
+  .catch(function () {
+    goAway('now!')
   })
 ```
