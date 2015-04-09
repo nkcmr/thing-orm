@@ -1,4 +1,4 @@
-### thing-orm
+### thing-orm [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 just another object-relational mapping library, built on [knex](http://knexjs.org/), but less _backbone-y_
 
 ```javascript
